@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "3550f537-621f-4ee1-a94c-457d91215559",
+		"name": "Serai - Credit Assessments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "credit assessment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyType\" : \"Sole proprietorship\",\n    \"numberOfEmployees\": 22,\n    \"numberOfYearsOperated\" : 0\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit-assessment-service/calculateCreditScore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit-assessment-service",
+						"calculateCreditScore"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "dda07ee8-3511-4a85-a320-e032038b6f62",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bc921aea-4a30-479f-ba2c-4a9a61fbe99f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
