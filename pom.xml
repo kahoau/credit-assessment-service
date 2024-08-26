@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<swagger.version>2.6.1</swagger.version>
+		<swagger.version>2.10.0</swagger.version>
 		<cucumber.version>4.7.0</cucumber.version>
 	</properties>
 
